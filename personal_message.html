@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cute Photo</title>
+    <style>
+        body {
+            background-color: #F0F8FF; /* Light blue background */
+            color: #333333; /* Dark text color for contrast */
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            animation: fadeIn 1s; /* Fade-in animation for the body */
+            overflow: hidden; /* Hide overflow for confetti */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: slideIn 1s; /* Slide-in animation for the main heading */
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .kavita {
+            font-size: 1.2em; /* Smaller font size for the kavita */
+            margin: 20px 0;
+            animation: fadeIn 1s; /* Fade-in animation for the kavita */
+            opacity: 0;
+            animation-fill-mode: forwards; /* Keep the final state */
+            white-space: pre-line; /* Preserve line breaks */
+        }
+
+        .back-link {
+            background-color: #4caf50; /* Green link button */
+            color: #ffffff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            display: inline-block;
+            margin: 10px;
+            animation: bounce 1s; /* Bounce animation for the back link */
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ffcc00; /* Confetti color */
+            opacity: 0.8;
+            animation: fall 3s infinite; /* Falling animation */
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-100px); opacity: 1; }
+            100% { transform: translateY(100vh); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Happy Birthday!</h1>
+        
+        <div class="kavita">
+            तेरी मुस्कान है जैसे सुबह की पहली किरण,<br>
+            तेरे बिना अधूरी है मेरी हर एक धड़कन।<br>
+            हर साल ये दिन लाता है नई बहार,<br>
+            क्योंकि हुआ था तू इस दिन मेरे प्यार का इज़हार।<br><br>
+
+            तेरे होने से रोशन है मेरा हर पल,<br>
+            तेरे बिना लगे ये दुनिया थोड़ी हलचल।<br>
+            तू है मेरा सपना, तू है मेरी दुआ,<br>
+            तेरे साथ ही जीने की है आरज़ू सदा।<br><br>
+
+            आज के दिन खुदा से करता हूँ यही फ़रियाद,<br>
+            तेरे चेहरे पर सदा रहे हँसी की बारात।<br>
+            हर ख्वाब तेरा हकीकत में बदल जाए,<br>
+            तेरे जीवन में खुशियों का सावन हरदम छाए।<br><br>
+
+            🎉 जन्मदिन की बहुत सारी शुभकामनाएँ मेरी जान,<br>
+            तू रहे सदा खुश, यही है मेरी पहचान। ❤️
+        </div>
+        
+        <a href="birthday_wish.html" class="back-link">Back to Birthday Wishes</a>
+    </div>
+
+    <!-- Confetti Elements -->
+    <div class="confetti" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="confetti" style="left: 20%; animation-delay: 0.5s;"></div>
+    <div class="confetti" style="left: 30%; animation-delay: 1s;"></div>
+    <div class="confetti" style="left: 40%; animation-delay: 1.5s;"></div>
+    <div class="confetti" style="left: 50%; animation-delay: 2s;"></div>
+    <div class="confetti" style="left: 60%; animation-delay: 2.5s;"></div>
+    <div class="confetti" style="left: 70%; animation-delay: 3s;"></div>
+    <div class="confetti" style="left: 80%; animation-delay: 3.5s;"></div>
+    <div class="confetti" style="left: 90%; animation-delay: 4s;"></div>
+</body>
+</html>
