@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Wishes</title>
+    <style>
+        body {
+            background: url('https://www.transparenttextures.com/patterns/wood-pattern.png'); /* Wood texture background */
+            color: #333333; /* Dark text color for contrast */
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            position: relative; /* Position relative for absolute children */
+            overflow: hidden; /* Hide overflow for decorations */
+            opacity: 0; /* Start hidden for fade-in effect */
+            animation: fadeIn 1s forwards; /* Fade-in animation */
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1; /* Fully visible */
+            }
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: bounce 1s infinite; /* Bounce animation */
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0); /* Original position */
+            }
+            40% {
+                transform: translateY(-20px); /* Move up */
+            }
+            60% {
+                transform: translateY(-10px); /* Move down */
+            }
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+            animation: fadeIn 1s forwards; /* Fade-in animation for paragraph */
+            animation-delay: 0.5s; /* Delay for paragraph */
+        }
+
+        .link {
+            background-color: #4caf50; /* Green link button */
+            color: #ffffff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+            display: inline-block;
+            margin: 10px;
+            animation: fadeIn 1s forwards; /* Fade-in animation for links */
+            animation-delay: 1s; /* Delay for links */
+        }
+
+        .link:hover {
+            background-color: #66bb6a; /* Lighter green on hover */
+            transform: scale(1.1) rotate(2deg); /* Scale up and rotate slightly on hover */
+            animation: shake 0.5s; /* Shake effect on hover */
+        }
+
+        @keyframes shake {
+            0% { transform: translate(0); }
+            25% { transform: translate(-5px); }
+            50% { transform: translate(5px); }
+            75% { transform: translate(-5px); }
+            100% { transform: translate(0); }
+        }
+
+        /* Star styles */
+        .star {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: #ffcc00; /* Star color */
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            opacity: 0.6; /* Reduced opacity for less twinkling effect */
+            animation: moveUpAndDown 3s infinite; /* Move up and down animation */
+        }
+
+        @keyframes moveUpAndDown {
+            0%, 100% {
+                transform: translateY(0); /* Initial position */
+            }
+            50% {
+                transform: translateY(-10px); /* Move up */
+            }
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="C:\Users\user\Desktop\00\1.mp3" type="audio/mpeg"> <!-- Path to your audio file -->
+    </audio>
+    
+    <div>
+        <h1>Happy Birthday!</h1>
+        <p>Choose a special message for you:</p>
+        <a href="your_cute_photo.html" class="link">Message 1</a> <!-- Hyperlink to Your Cute Photo -->
+        
+        <a href="a.html" class="link">Message 2</a>
+        
+        <a href="personal_message.html" class="link">Message 3</a> <!-- Updated to link to the new personal message page -->
+    </div>
+
+    <!-- Star Elements arranged in specified order -->
+    <div class="star" style="left: 5%; top: 10%; animation-delay: 0s;"></div>
+    <div class="star" style="left: 15%; top: 20%; animation-delay: 0.5s;"></div>
+    <div class="star" style="left: 25%; top: 5%; animation-delay: 1s;"></div>
+    <div class="star" style="left: 35%; top: 15%; animation-delay: 1.5s;"></div>
+    <div class="star" style="left: 45%; top: 25%; animation-delay: 2s;"></div>
+    <div class="star" style="left: 55%; top: 10%; animation-delay: 2.5s;"></div>
+    <div class="star" style="left: 65%; top: 20%; animation-delay: 3s;"></div>
+    <div class="star" style="left: 75%; top: 5%; animation-delay: 3.5s;"></div>
+    <div class="star" style="left: 85%; top: 15%; animation-delay: 4s;"></div>
+    <div class="star" style="left: 95%; top: 10%; animation-delay: 4.5s;"></div>
+    <div class="star" style="left: 5%; bottom: 10%; animation-delay: 0s;"></div>
+    <div class="star" style="left: 15%; bottom: 20%; animation-delay: 0.5s;"></div>
+    <div class="star" style="left: 25%; bottom: 5%; animation-delay: 1s;"></div>
+    <div class="star" style="left: 35%; bottom: 15%; animation-delay: 1.5s;"></div>
+    <div class="star" style="left: 45%; bottom: 25%; animation-delay: 2s;"></div>
+    <div class="star" style="left: 55%; bottom: 10%; animation-delay: 2.5s;"></div>
+    <div class="star" style="left: 65%; bottom: 20%; animation-delay: 3s;"></div>
+    <div class="star" style="left: 75%; bottom: 5%; animation-delay: 3.5s;"></div>
+    <div class="star" style="left: 85%; bottom: 15%; animation-delay: 4s;"></div>
+    <div class="star" style="left: 95%; bottom: 10%; animation-delay: 4.5s;"></div>
+    <div class="star" style="left: 5%; top: 30%; animation-delay: 0s;"></div>
+    <div class="star" style="left: 15%; top: 40%; animation-delay: 0.5s;"></div>
+    <div class="star" style="left: 25%; top: 35%; animation-delay: 1s;"></div>
+    <div class="star" style="left: 35%; top: 45%; animation-delay: 1.5s;"></div>
+    <div class="star" style="left: 45%; top: 50%; animation-delay: 2s;"></div>
+    <div class="star" style="left: 55%; top: 30%; animation-delay: 2.5s;"></div>
+    <div class="star" style="left: 65%; top: 40%; animation-delay: 3s;"></div>
+    <div class="star" style="left: 75%; top: 35%; animation-delay: 3.5s;"></div>
+    <div class="star" style="left: 85%; top: 45%; animation-delay: 4s;"></div>
+    <div class="star" style="left: 95%; top: 40%; animation-delay: 4.5s;"></div>
+</body>
+</html>

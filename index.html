@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Countdown Timer</title>
+    <style>
+        body {
+            background: url('https://www.transparenttextures.com/patterns/wood.png'); /* Wooden texture background */
+            color: #333333; /* Dark text color for contrast */
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .countdown {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #4caf50; /* Green button color */
+            color: #ffffff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #66bb6a; /* Lighter green on hover */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Birthday Countdown Timer</h1>
+        <div class="countdown" id="countdown"></div>
+        <a href="birthday_wish.html" class="button">Happy Birthday My Love</a>
+    </div>
+
+    <script>
+        const birthdayDate = new Date("2025-05-04T00:00:00").getTime();
+        const countdownFunction = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = birthdayDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = 
+                days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("countdown").innerHTML = "Happy Birthday!";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
